@@ -8,7 +8,7 @@
 /* OVERALL ASPECT */
 
 body {
-    background-color: #f2f2f2;
+    background-color: #090909;
     font-family: 'Ruda', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -19,11 +19,18 @@ body {
 
 }
 
+.liAgradec{
+  font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+     color: #FDFFFD;
+}
+
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ruda', sans-serif;
     font-weight: 900;
-    color: #333;
+    color: #FDFFFD;
 }
 
 
@@ -375,25 +382,44 @@ p.capitalize:first-letter {
 }
 
 /* Color Wraps */
-#white {
+#colorFondoNegro {
 	margin-top: 0px;
-	background-color: #ffffff;
+	background-color: #090909;
 	min-height: 300px;
 	width: 100%;
 }
 
+/*CAMBIO DE COLOR --------------------------------------------------------------*/
+
 #grey {
+
 	margin-top: 0px;
-	background-color: #f7f7f7;
+	background-color: #323232;
 	min-height: 300px;
 	width: 100%;
 }
+
+
+/*CAMBIO DE COLOR --------------------------------------------------------------*/
 
 #black {
 	margin-top: 0px;
-	background-color: #2f2f2f;
+	background-color: #C40D0D;
 	min-height: 300px;
 	width: 100%;
+}
+
+
+#espaciadoRojo{
+  margin-top: 0px;
+  background-color: #C40D0D;
+  min-height: 300px;
+  width: 100%;
+
+
+    
+  
+
 }
 
 #black h3 {
@@ -474,12 +500,13 @@ p.capitalize:first-letter {
 
 
 #cta02 {
-	background: url(../img/cta/cta02.jpg) no-repeat center top;
+	background: url(../img/moneda.png) no-repeat center top;
 	margin-top: 0px;
 	padding-top:100px;
 	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
+background-size: cover;
+    background-attachment: fixed;
+
 	min-height: 350px;
 	width: 100%;
 
@@ -575,18 +602,84 @@ p.capitalize:first-letter {
   position: relative;
   float: left;
   margin: 0 20px 0 0;
-  > img {
-    display: block;
+  padding-bottom: 5%;
+  
+}
+/*borde */ 
+
+.sketchy {
+    padding: 4rem 8rem;
+    display: inline-block;
+    border: 3px solid #333333;
+    font-size: 2.5rem;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    background: #ffffff;
     position: relative;
+    
+    &::before {
+        content: '';
+        border: 2px solid #353535;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+        border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    }
+}
+
+.teamimg{
+
+    height: 400px;
+    object-fit: contain;
+    padding: 4%; 
+}
+
+.teamimg:hover {
+  animation: bounce 0.4s;
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
+
+/* animación - hide -hover */
+
+.members:hover .team-info{
+  display:block;
+    visibility:visible;
+    opacity:1;
+}
+
+
+/* animación - hide -hover */
 
 .team-info {
   position: absolute;
   bottom: 20px;
   right: 0px;
   width: 170px;
-  padding: 10px 10px 30px 10px;
+  padding: 10px 10px 10px 10px;
+    visibility:hidden;
+    opacity:0;
+    transition:opacity 0.3s linear;;
 }
 .subhead {
   color: #f2f2f2;
@@ -595,6 +688,7 @@ p.capitalize:first-letter {
 }
 .team-name {
   color: white;
+  font-size: 18px;
   font-weight: 400;
   margin: 0;
   letter-spacing: -1px;
@@ -803,3 +897,66 @@ p.capitalize:first-letter {
 .credits {
   color: #999;
 }
+
+
+.headerTOP{
+  max-height: 50px;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  background-color: #404040 ;
+
+}
+
+.imgRedes{
+  height: 30px;
+  object-fit: contain;
+  margin-top: 10px;
+ transition: transform .2s; /* Animation */
+
+}
+
+.imgRedes:hover {
+  transform: scale(1.4); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.imgLogo{
+  height: 70px;
+  object-fit: contain;
+  padding-top: 10px;
+  transition: transform .2s; /* Animation */
+}
+
+.imgLogo:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.videoUniverso{
+
+
+  float: left;
+  
+
+
+}
+
+#diagonal{
+  margin:0px;
+    background-color: #C40D0D;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+.carousel-item {
+height: 200px;
+overflow: hidden;
+width: 100%;
+}
+.carousel-inner {
+height: 200px;
+}
+
