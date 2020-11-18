@@ -909,14 +909,14 @@ background-size: cover;
 
 .responsiveImg{
  
-  max-height: 100%;
+  max-height: auto;
   max-width: 100%;
 
 }
 
 .responsiveImgTamaño{
-  height:600px; 
-  width:500px;
+  height:350px; 
+  width:350px;
   float: left;
   margin: 1.5%;
 
