@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>La Moneda</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
   <meta content="" name="keywords">
   <meta content="" name="description">
 
@@ -36,33 +37,32 @@
 
 <body>
 
-<header class="headerTOP">
-	<div class="container">
-		<div class="row ">
-			<div class="col-lg-9 col-xs-12">
-				<img class="imgLogo" src="img/logo.png">
-			</div>	
-			<div class="col-lg-1 col-md-12 col-xs-12">
-				<a href="#"><img class="imgRedes" src="img/facebook.png"></a>
-			</div>
-			<div class="col-lg-1 col-md-12 col-xs-12">
-				<a href="#"><img class="imgRedes" src="img/instagram.png"></a>
-			</div>
-			<div class="col-lg-1 col-md-12 col-xs-12">
-				<a href="#"><img class="imgRedes" src="img/youtube.png"></a>
-			</div>
 
-		</div>
-	</div>
-</header>
-
-
+<nav id="hamnav">
+  <!-- [THE HAMBURGER] -->
+  <label for="hamburger">&#9776;</label>
+  <input type="checkbox" id="hamburger"/>
  
-  <div class="container">
+  <!-- [MENU ITEMS] -->
+  <div id="hamitems">
+    <a class="active" href="index.html">Inicio</a>
+   	<a href="#sipnosis">Sipnosis</a>
+    <a href="#personajes">Personajes</a>
+    <a href="#plataformas">Plataformas</a>
+    <a href="#equipo">Equipo</a>
+    <a href="#contacto">Contácto</a>
+  </div>
+</nav>
+ 
+
+  <div class="container" id="inicio">
 
     <div class="row mt centered ">
       <div class="col-lg-4 col-lg-offset-4">
-        <h3>¿Contexto?</h3>
+        
+        <img style="padding-bottom: 100px;" class="responsiveImg" src="img/logo.png">
+         <br>
+        <h3>UNIVERSO TRANSMEDIA</h3>
         <hr>
       </div>
     </div>
@@ -103,36 +103,36 @@
 
 
 <div id="black">
-    <div class="container">
+  <div class="container" id="sipnosis">
       <div class="row ">
-        <div class="col-lg-4" style="padding-top: 2%;">
+        <div class="col-lg-4 centered" style="padding-top: 2%; ">
           <h3>SIPNOSIS</h3>
           <hr>
-          <div class="col-lg-4 ">
-          	
-          </div>
-
         </div>
         <!-- /col-lg-4 -->
       </div>
       <!-- /row -->
-
-      <div class="row mt">
-        <div class="col-lg-4 ">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-5" style="padding-right: 5%;" >
           <p>Con la moneda podrás tener todo el poder que existe en este mundo. todo puede ser tuyo, serás el rey. Esta es la historia de Luka, el joven que encuentra una antigua moneda obteniendo así el poder del rey el cual le otorga a su poseedor un carisma inigualable, convirtiéndolo en la persona más persuasiva de todo el mundo y dándole la capacidad de ordenar indirectamente a las masas y que estas cumplan sus deseo</p>
         </div>
 
-        <div class="col-lg-4 col-lg-offset-2 videoUniverso">
-        	<iframe width="560" height="315" src="https://www.youtube.com/embed/Jc9JcrqkFac" frameborder="50px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+         <div  >
+        	<iframe class="responsiveVideo" src="https://www.youtube.com/embed/Jc9JcrqkFac" frameborder="50px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+
       </div>
       <!-- /row -->
     </div>
-    <!-- /container -->
   </div>
+    <!-- /container -->
+</div>
   <!-- /black // QUE EN REALIDAD ES EL ROJO -->
 
 
-  <div class="container">
+  <div class="container" id="personajes">
     <div class="row mt centered ">
       <div class="col-lg-4 col-lg-offset-4">
         <h3>PERSONAJES PRINCIPALES</h3>
@@ -141,8 +141,8 @@
     </div>
     <!-- /row -->
     <div class="row mt centered">
-      <div class="col-lg-4 desc">
-        <a class="b-link-fade b-animate-go" href="#"><img height="290" width="350" src="img/Personaje1.png" alt="" />
+      <div class="  desc responsiveImgTamaño">
+        <a class="b-link-fade b-animate-go" href="#"><img class="responsiveImg" src="img/Personaje1.png" alt="" />
 					<div class="b-wrapper" data-toggle="modal" data-target="#exampleModalCenter1">
 					  	<h4 class="b-from-left b-animate b-delay03">Click</h4>
 					  	<p class="b-from-right b-animate b-delay03">Para ver detalles</p>
@@ -179,10 +179,12 @@ Relación con el lenguaje: Se caracteriza por ser alguien sumamente extrovertido
 				</div>
 
 
-        <p>Lucius Arthur Grant</p>
+        <p>Lucius Arthur Grant</p> 
       </div>
-      <div class="col-lg-4 desc">
-        <a class="b-link-fade b-animate-go" href="#"><img height="290" width="350" src="img/Personaje2.png" alt="" />
+
+
+      <div class="  desc responsiveImgTamaño">
+        <a class="b-link-fade b-animate-go" href="#"><img class="responsiveImg" src="img/Personaje2.png" alt="" />
 					<div class="b-wrapper" data-toggle="modal" data-target="#exampleModalCenter2">
 					  	<h4 class="b-from-left b-animate b-delay03">Click</h4>
 					  	<p class="b-from-right b-animate b-delay03">Para ver detalles</p>
@@ -226,8 +228,8 @@ Después de encontrar la moneda busca vengar a su amigo, acabar con la elite mal
 
         <p>Luka Walker White</p>
       </div>
-      <div class="col-lg-4 desc">
-        <a class="b-link-fade b-animate-go" href="#"><img height="290" width="350" src="img/Personaje3.png" alt="" />
+      <div class="  desc responsiveImgTamaño">
+        <a class="b-link-fade b-animate-go" href="#"><img class="responsiveImg" src="img/Personaje3.png" alt="" />
 					<div class="b-wrapper" data-toggle="modal" data-target="#exampleModalCenter3">
 					  	<h4 class="b-from-left b-animate b-delay03">Click</h4>
 					  	<p class="b-from-right b-animate b-delay03">Para ver detalles</p>
@@ -311,158 +313,116 @@ Relación con el lenguaje: Este es capaz de hablar en cualquier idioma de manera
 </div><!-- #myCarousel -->
 </div>
 
-
-
-
-
-
-
  </div>
 
-  <div id="colorFondoNegro" style="height: 560px; padding-top: 5%;">
-  	
-  	<div class="row centered ">
+  
+<!--********************************************************************************** -->
+<div class="container " id="plataformas" >
+	<div class="row mt centered ">
       <div class="col-lg-4 col-lg-offset-4">
-        <h3>PLATAFORMAS / CANALES</h3>
+        <h3>PLATAFORMAS PRINCIPALES</h3>
         <hr>
       </div>
     </div>
-
-  	 <div class="col-lg-3 desc">
-        <a class="b-link-fade b-animate-go" href="#"><img height="300" width="300" src="img/facebook.png" alt="" />
-					<div class="b-wrapper" data-toggle="modal" data-target="#exampleModalCenter4">
-					  	<h4 class="b-from-left b-animate b-delay03">Click</h4>
-					  	<p class="b-from-right b-animate b-delay03">Para ver detalles</p>
+	<div class="row col-lg-8 " >
+		
+		
+			<div class="square-flip">
+				<div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+					<div class="square-container">
+						<div class="align-center"><img src="http://titanicthemes.com/files/flipbox/kallyas.png" class="boxshadow" alt=""></div>
+						<h2 class="textshadow"><img src="img/facebook.png"></h2>
+						
 					</div>
-				</a>
-
-			<div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-
-
-				  <div class="modal-dialog modal-dialog-centered" role="document">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				          <span aria-hidden="true">&times;</span>
-				        </button>
-				      </div>
-				      <div class="modal-body">
-				      	<p>La pretensión de este contenido es mostrar al consumidor los avances del proyecto en cuestión. La idea es que el usuario vaya conociendo más sobre la producción del contenido del universo, ya sea mediante ilustraciones o mensajes relacionados al contexto de la historia. El objetivo está orientado a evidenciar lo que hacemos en producción para que el usuario pueda crear una fidelización con la historia del universo y con los personajes, para demostrar con cierto ápice de interés, lo que puede dar el universo de la moneda. </p>
-				        				        
-
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>				 
-				      </div>
-				    </div>
-				  </div>
-			</div>
-      </div>
-     
-      <!-- Plataforma 1 -->
-
-  	 <div class="col-lg-3 desc">
-        <a class="b-link-fade b-animate-go" href="#"><img height="300" width="300" src="img/ICON2.png" alt="" />
-					<div class="b-wrapper" data-toggle="modal" data-target="#exampleModalCenter5">
-					  	<h4 class="b-from-left b-animate b-delay03">Click</h4>
-					  	<p class="b-from-right b-animate b-delay03">Para ver detalles</p>
+					<div class="flip-overlay"></div>
+				</div>
+				<div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+					<div class="square-container2">
+						<div class="align-center"></div>
+						<h4 >La pretensión de este contenido es mostrar al consumidor los avances del proyecto en cuestión. La idea es que el usuario vaya conociendo más sobre la producción del contenido del universo, ya sea mediante ilustraciones o mensajes relacionados al contexto de la historia. El objetivo está orientado a evidenciar lo que hacemos en producción para que el usuario pueda crear una fidelización con la historia del universo y con los personajes, para demostrar con cierto ápice de interés, lo que puede dar el universo de la moneda.</h4>
 					</div>
-				</a>
-
-			<div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-
-
-				  <div class="modal-dialog modal-dialog-centered" role="document">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				          <span aria-hidden="true">&times;</span>
-				        </button>
-				      </div>
-				      <div class="modal-body">
-				       <p> Instagram va a ser una red orientada para vender el WebToon y todos los productos e ideas de negocio que este pueda generar. El objetivo es presentar información más amena que interiorice con el consumidor, mostrando realmente quienes son los personajes de este universo. Mediante publicaciones  semanales (o diarios dependiendo de la época o de la planificación) se mostrarán productos como muñecos, llaveros, libretas o cualquier artículo que pueda vender alguna idea o aspecto relacionado al universo de la moneda. En el apartado de las historias, se planea desarrollar una inmersión orientada a las personalidades de la moneda. Por medio de mensajes, encuestas o animaciones se intenta mostrar las diferentes personalidades de los protagonistas de la historia de la moneda. Lo que se busca es que estos personajes interactúen haciendo preguntas políticas, dando datos curiosos sobre la historia y la serie y frases que busquen la reflexión de los usuarios ante temas políticos complicados actuales.</p>
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>				 
-				      </div>
-				    </div>
-				  </div>
+					<div class="flip-overlay"></div>
+				</div>
 			</div>
-      </div>
 
-      <!-- Plataforma 1 -->
-
-  	 <div class="col-lg-3 desc">
-        <a class="b-link-fade b-animate-go" href="#"><img height="270" style="margin-top: 20px;" width="270" src="img/youtube.png" alt="" />
-					<div class="b-wrapper" data-toggle="modal" data-target="#exampleModalCenter6">
-					  	<h4 class="b-from-left b-animate b-delay03">Click</h4>
-					  	<p class="b-from-right b-animate b-delay03">Para ver detalles</p>
+			<div class="square-flip">
+				<div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+					<div class="square-container">
+						<div class="align-center"><img src="http://titanicthemes.com/files/flipbox/kallyas.png" class="boxshadow" alt=""></div>
+						<h2 class="textshadow"><img src="img/instagram.png"></h2>
+						
 					</div>
-				</a>
-
-			<div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-
-
-				  <div class="modal-dialog modal-dialog-centered" role="document">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				          <span aria-hidden="true">&times;</span>
-				        </button>
-				      </div>
-				      <div class="modal-body">
-				       <p> Se planea utilizar esta plataforma para subir trailers o pequeñas narraciones animadas acerca del universo y su trasfondo, con el fin de que los usuarios tengan un mayor entendimiento de este. La intención es mostrar a través de estos trailers los plot points del universo dividiéndolos en pequeñas historias que relatan los antepasados portadores de la moneda. Además de subir regularmente (un periodo aproximado de 1 mes) reflexiones de cómo se hicieron los productos en cuestión (WebToon, Trailers, etc...).</p>
-
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>				 
-				      </div>
-				    </div>
-				  </div>
-			</div>
-      </div>
-
-     <!-- Plataforma 1 -->
-
-  	 <div class="col-lg-3 desc">
-        <a class="b-link-fade b-animate-go" href="#"><img height="300" width="300" src="img/ICON3.png" alt="" />
-					<div class="b-wrapper" data-toggle="modal" data-target="#exampleModalCenter7">
-					  	<h4 class="b-from-left b-animate b-delay03">Click</h4>
-					  	<p class="b-from-right b-animate b-delay03">Para ver detalles</p>
+					<div class="flip-overlay"></div>
+				</div>
+				<div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+					<div class="square-container2">
+						<div class="align-center"></div>
+						<h4 >Instagram va a ser una red orientada para vender el WebToon y todos los productos e ideas de negocio que este pueda generar. El objetivo es presentar información más amena que interiorice con el consumidor, mostrando realmente quienes son los personajes de este universo. Mediante publicaciones  semanales (o diarios dependiendo de la época o de la planificación) se mostrarán productos como muñecos, llaveros, libretas o cualquier artículo que pueda vender alguna idea o aspecto relacionado al universo de la moneda. En el apartado de las historias, se planea desarrollar una inmersión orientada a las personalidades de la moneda. Por medio de mensajes, encuestas o animaciones se intenta mostrar las diferentes personalidades de los protagonistas de la historia de la moneda. Lo que se busca es que estos personajes interactúen haciendo preguntas políticas, dando datos curiosos sobre la historia y la serie y frases que busquen la reflexión de los usuarios ante temas políticos complicados actuales.</h4>
 					</div>
-				</a>
-
-			<div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-
-
-				  <div class="modal-dialog modal-dialog-centered" role="document">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				          <span aria-hidden="true">&times;</span>
-				        </button>
-				      </div>
-				      <div class="modal-body">
-
-				      	<p>La obra seminal del universo será adaptada en la plataforma de WebToon. Un webtoon alberga comics y manhwas de modo que nos es útil para mostrar la historia planteada del personaje principal.  El WebToon diseñado consta de 300 tomos donde se cuenta la era de Luka Walker con la moneda. Se Ahonda sobre temas relacionados al poder y argumentos con carácter oscuros que no se alejan de la vida real. La historia va a estar enfocada en cómo Luka Walker obtiene el poder del rey y lo utiliza para cambiar al mundo actual, creando una nueva era. </p>
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>				 
-				      </div>
-				    </div>
-				  </div>
+					<div class="flip-overlay"></div>
+				</div>
 			</div>
-      </div>
 
-  </div>
-  <!-- /colorFondoNegro -->
+	
+		
+	</div> <!-- ROW -->
+
+	<div class="row" >
+		
+
+	<div class="square-flip " >
+		<div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+			<div class="square-container">
+				<div class="align-center"><img src="http://titanicthemes.com/files/flipbox/kallyas.png" class="boxshadow" alt=""></div>
+				<h2 class="textshadow"><img src="img/youtube.png"></h2>
+			
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<h4>Se planea utilizar esta plataforma para subir trailers o pequeñas narraciones animadas acerca del universo y su trasfondo, con el fin de que los usuarios tengan un mayor entendimiento de este. La intención es mostrar a través de estos trailers los plot points del universo dividiéndolos en pequeñas historias que relatan los antepasados portadores de la moneda. Además de subir regularmente (un periodo aproximado de 1 mes) reflexiones de cómo se hicieron los productos en cuestión (WebToon, Trailers, etc...).</h4>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>
+
+	<div class="square-flip">
+		<div class='square' data-image="https://instagram.fotp3-2.fna.fbcdn.net/t51.2885-15/e35/14712096_386502691740262_2357154798815412224_n.jpg?ig_cache_key=MTM2NzU2MzUwNjQ3OTUzOTgxNQ%3D%3D.2">
+			<div class="square-container">
+				<div class="align-center"><img src="http://titanicthemes.com/files/flipbox/kallyas2.png" class="boxshadow" alt=""></div>
+				<h2 class="textshadow"><img src="img/ICON3.png"></h2>
+				
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-wedding.jpg">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<h4>La obra seminal del universo será adaptada en la plataforma de WebToon. Un webtoon alberga comics y manhwas de modo que nos es útil para mostrar la historia planteada del personaje principal.  El WebToon diseñado consta de 300 tomos donde se cuenta la era de Luka Walker con la moneda. Se Ahonda sobre temas relacionados al poder y argumentos con carácter oscuros que no se alejan de la vida real. La historia va a estar enfocada en cómo Luka Walker obtiene el poder del rey y lo utiliza para cambiar al mundo actual, creando una nueva era.</h4>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>
+  
+
+	</div>
+
+
+</div>
+
+
+
+
+
+ 
+<!--********************************************************************************** -->
+ 
+
 
   <div id="cta02">
-    <div class="container">
+    <div class="container" id="equipo">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
         
@@ -490,7 +450,7 @@ Relación con el lenguaje: Este es capaz de hablar en cualquier idioma de manera
           <div class="members ">
             <img class="teamimg sketchy " src="img/t1.jpg" alt="">
             <div class="team-info">
-              <div class="subhead">Developer</div>
+              <div class="subhead">Artista</div>
               <h2 class="team-name">Kenneth Mesa Lopera</h2>
               
             </div>
@@ -502,7 +462,7 @@ Relación con el lenguaje: Este es capaz de hablar en cualquier idioma de manera
           <div class="members">
             <img class="teamimg sketchy" src="img/t2.jpg" alt="">
             <div class="team-info">
-              <div class="subhead ">Designer</div>
+              <div class="subhead ">Productor</div>
               <h2 class="team-name">Mateo Congote Torbar</h2>
               
             </div>
@@ -512,10 +472,11 @@ Relación con el lenguaje: Este es capaz de hablar en cualquier idioma de manera
 
          <div class="col-lg-4 centered">
           <div class="members">
-            <img class="teamimg sketchy" src="img/t3.jpg" alt="">
+            <img class="teamimg sketchy" src="img/t5.jpg" alt="">
             <div class="team-info">
-              <div class="subhead">Designer</div>
-              <h2 class="team-name">Camilo Marín Villa</h2>
+              <div class="subhead">Productor</div>
+              <h2 class="team-name">Daniel Díaz Merlano</h2>
+              
              
             </div>
           </div>
@@ -526,7 +487,7 @@ Relación con el lenguaje: Este es capaz de hablar en cualquier idioma de manera
           <div class="members">
             <img class="teamimg sketchy" src="img/t4.jpg" alt="">
             <div class="team-info">
-              <div class="subhead">Designer</div>
+              <div class="subhead">Desarrollador</div>
               <h2 class="team-name">José Manuel Díaz Galeano</h2>
               
             </div>
@@ -536,10 +497,22 @@ Relación con el lenguaje: Este es capaz de hablar en cualquier idioma de manera
 
         <div class="col-lg-4 centered">
           <div class="members">
-            <img class="teamimg sketchy" src="img/t5.jpg" alt="">
+            <img class="teamimg sketchy" src="img/t6.jpg" alt="">
             <div class="team-info">
-              <div class="subhead">Designer</div>
-              <h2 class="team-name">Daniel Díaz Merlano</h2>
+              <div class="subhead">Desarrollador</div>
+              <h2 class="team-name">Edward Monsalve</h2>
+              
+            </div>
+          </div>
+        </div>
+        <!-- /col-lg-4 -->
+
+        <div class="col-lg-4 centered">
+          <div class="members">
+            <img class="teamimg sketchy" src="img/t3.jpg" alt="">
+            <div class="team-info">
+              <div class="subhead">Desarrollador</div>
+              <h2 class="team-name">Camilo Marín Villa</h2>
               
             </div>
           </div>
@@ -562,11 +535,11 @@ Relación con el lenguaje: Este es capaz de hablar en cualquier idioma de manera
   </div>
   <!-- /black -->
 
-  <div class="container">
+  <div class="container" id="contacto">
     <div class="row ">
-      <div class="col-lg-12  centered">
+      <div class=" centered">
         <h3>Contáctanos:</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.971703875835!2d-75.6115878!3d6.2316727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd6c06b6158ba814d!2sUniversidad%20de%20Medell%C3%ADn!5e0!3m2!1ses-419!2sco!4v1605207645651!5m2!1ses-419!2sco" width="800" height="500" frameborder="10" style="border:0; " allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="responsiveMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.971703875835!2d-75.6115878!3d6.2316727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd6c06b6158ba814d!2sUniversidad%20de%20Medell%C3%ADn!5e0!3m2!1ses-419!2sco!4v1605207645651!5m2!1ses-419!2sco"  frameborder="50" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </div>    
   </div>
@@ -590,8 +563,8 @@ Relación con el lenguaje: Este es capaz de hablar en cualquier idioma de manera
           </p>
           <p>
            Por el apoyo dado durante el desarrollo de este proyecto.<br/>
-           Si tienes alguna duda envianos un correo a:<br>
-            <i class="fa fa-envelope-o"></i> ArganStudios@gmail.com
+           
+            
           </p>
         </div>
 
@@ -599,8 +572,12 @@ Relación con el lenguaje: Este es capaz de hablar en cualquier idioma de manera
         <div class="col-lg-3 col-lg-offset-1">
           <h4>Telefono:</h4>
           <p>
-          	<i class="fa fa-mobile"></i> 3226550585
+          	<i class="fa fa-mobile"></i> 3226550585 <br>
+          	Si tienes alguna duda envianos un correo a:<br>
+          	<i class="fa fa-envelope-o"></i> ArganStudios@gmail.com
           </p>
+
+          
         </div>
         <!-- /col-lg-3 -->
 

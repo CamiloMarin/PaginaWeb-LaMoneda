@@ -11,9 +11,9 @@ body {
     background-color: #090909;
     font-family: 'Ruda', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 100%;
     color: #555;
-
+    font-size: 14px;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
 
@@ -29,7 +29,7 @@ body {
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ruda', sans-serif;
-    font-weight: 900;
+    font-size: 14px;
     color: #FDFFFD;
 }
 
@@ -84,15 +84,8 @@ a:after {
     padding: 0;
 }
 
-.navbar {
-	font-size: 14px;
-	background: #ffffff;
-}
 
-.navbar-fixed-top {
-border-width: 0 0 0px;
-border-bottom-width: 0px;
-}
+
 /* ================== BASIC CONFIGURATION ================== */
 
 .spacing i {
@@ -898,9 +891,40 @@ background-size: cover;
   color: #999;
 }
 
+.responsiveMap {
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+.responsiveVideo {
+  width: 100%;
+  height: 300px;
+  max-width: 600px;
+  margin-bottom: 70px;
+  float: left;
+
+}
+
+.responsiveImg{
+ 
+  max-height: 100%;
+  max-width: 100%;
+
+}
+
+.responsiveImgTamaño{
+  height:350px; 
+  width:350px;
+  float: left;
+  margin: 1.5%;
+
+}
+
 
 .headerTOP{
-  max-height: 50px;
+  
   width: 100%;
   z-index: 100;
   position: fixed;
@@ -931,14 +955,6 @@ background-size: cover;
 .imgLogo:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-.videoUniverso{
-
-
-  float: left;
-  
-
-
-}
 
 #diagonal{
   margin:0px;
@@ -947,8 +963,6 @@ background-size: cover;
     height: 100%;
 
 }
-
-
 
 
 .carousel-item {
@@ -960,3 +974,320 @@ width: 100%;
 height: 200px;
 }
 
+
+/* [ON BIG SCREEN] ****************/
+/* Wrapper */
+#hamnav {
+  width: 100%;
+  background: #C40D0D;
+  z-index: 3;
+  /* Optional */
+  position: sticky;
+  top: 0;
+}
+
+/* Hide Hamburger */
+#hamnav label, #hamburger { display: none; }
+
+/* Horizontal Menu Items */
+#hamitems { display: flex; }
+#hamitems a {
+  width: 20%; /* 100% / 5 tabs = 20% */
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover {
+  background: #401408;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+  /* Show Hamburger Icon */
+  #hamnav label { 
+    display: inline-block; 
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* Break down menu items into vertical */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  /* Toggle Show/Hide Menu */
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+}
+
+
+
+
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO*/
+
+    .square-flip{
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+
+    -webkit-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -ms-transform: perspective(1000px);
+    transform: perspective(1000px);
+
+    -webkit-transform-style: preserve-3d; 
+    -moz-transform-style: preserve-3d; 
+    -ms-transform-style: preserve-3d; 
+    transform-style: preserve-3d; 
+
+    /*border:1px solid #efefef;*/
+    
+    position:relative;
+    float:left;
+    
+
+    }
+    .square-flip{
+     
+      height:400px;
+      max-width: 400px;
+      width: 100%;
+      float: left;
+      margin-top: 25px;
+      margin-bottom:25px;
+  
+
+    }
+    .square,.square2{
+      width:100%;
+      height:100%;
+    }
+    .square{
+
+      background-size: cover;
+      background-position:center center;
+
+      -ms-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          -webkit-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+      overflow: hidden;
+
+      position:absolute;
+      top:0;
+
+
+      -webkit-backface-visibility: hidden; 
+      backface-visibility: hidden;
+    }
+    .square-flip .square{
+      -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      transform-style: preserve-3d;
+      z-index:1;
+    }
+    .square-flip:hover .square{
+      -webkit-transform: rotateY(-180deg);
+      -moz-transform: rotateY(-180deg);
+      -o-transform: rotateY(-180deg);
+      -ms-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+      transform-style: preserve-3d;
+    }
+
+
+    .square2{
+
+      background-size: cover;
+      background-position:center center;
+
+      -ms-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          -webkit-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+      overflow: hidden;
+
+      position:absolute;
+      top:0;
+
+      -webkit-backface-visibility: hidden; 
+      backface-visibility: hidden;
+    }
+    .square-flip .square2{
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+      transform-style: preserve-3d;
+      z-index:1;
+    }
+    .square-flip:hover .square2{
+      -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      transform-style: preserve-3d;
+    }
+
+    /*Square content*/
+    .square-container{
+      
+      text-align:center;
+      position:relative;
+      top:45%;
+
+      -ms-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          -webkit-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+
+    
+      -webkit-transform: translateY(-50%) translateX(0px)  scale(1);
+      -ms-transform: translateY(-50%) translateX(0px)  scale(1);
+  transform: translateY(-50%) translateX(0px)  scale(1);
+      transform-style: preserve-3d;
+      z-index:2;
+    }
+    .square-flip:hover .square-container{
+      
+      -webkit-transform: translateY(-50%) translateX(-650px)  scale(.88);
+      -ms-transform: translateY(-50%) translateX(-650px)  scale(.88);
+      transform: translateY(-50%) translateX(-650px)  scale(.88);
+      transform-style: preserve-3d;
+
+    }
+
+    .square-container2{
+      padding:40px;
+      text-align:center;
+      position:relative;
+      top:50%;
+
+      -ms-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          -webkit-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+
+      
+      -webkit-transform: translateY(-50%) translateX(650px) translateZ(60px) scale(.88);
+      -ms-transform: translateY(-50%) translateX(650px) translateZ(60px) scale(.88);
+      transform: translateY(-50%) translateX(650px) translateZ(60px) scale(.88);
+
+      transform-style: preserve-3d;
+      z-index:2;
+    }
+    .square-flip:hover .square-container2{
+      
+      -webkit-transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+      -ms-transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+      transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+      transform-style: preserve-3d;
+    }
+
+
+
+    /*Style text*/
+    .square-flip h3{
+      color:white;
+      font-family: "Open Sans";
+      font-weight:700;
+      font-size:22px;
+    }
+    .square-flip h4{
+      color:white;
+      font-family: "Open Sans";
+      font-weight:500;
+      font-size:16px;
+      line-height:26px
+      padding: 25px;
+    }
+
+@media screen and (min-width: 601px) {
+  .square-flip h4 {
+    font-size: 16px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .square-flip h4 {
+    font-size: 13px;
+  }
+}
+
+
+    /*Elements*/
+    .flip-overlay{
+      display:block;
+      background:rgba(0,0,0,0.5);
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:0;
+    }
+    .align-center{
+      margin:0 auto;
+    }
+    
+
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa067+0,ff2959+49,ff2024+100 */
+      background: #ffa067; /* Old browsers */
+      background: -moz-linear-gradient(-45deg,  #ffa067 0%, #ff2959 49%, #ff2024 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(-45deg,  #ffa067 0%,#ff2959 49%,#ff2024 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(135deg,  #ffa067 0%,#ff2959 49%,#ff2024 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa067', endColorstr='#ff2024',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+
+
+    /*ADD SHADOWS OPTIONAL*/
+    .square-flip .square .boxshadow, .square-flip .square .textshadow, .square-flip .square2 .boxshadow, .square-flip .square2 .textshadow{
+      -ms-transition: 0.60s;
+          transition: 0.60s;
+          -webkit-transition: 0.60s;
+    }
+
+    .square-flip .square .boxshadow{
+      -webkit-box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+      -moz-box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+      box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+    }
+    .square-flip .square .textshadow{
+      -webkit-text-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+      -moz-text-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+      text-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+    }
+    .square-flip:hover .square .boxshadow, .square-flip:hover .square .textshadow{
+      -webkit-box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+      -moz-box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+      box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+    }
+
+
+    .square-flip .square2 .boxshadow{
+      -webkit-box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+      -moz-box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+      box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+    }
+    .square-flip .square2 .textshadow{
+      -webkit-text-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+      -moz-text-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+      text-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+    }
+    .square-flip:hover .square2 .boxshadow, .square-flip:hover .square2 .textshadow{
+      -webkit-box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+      -moz-box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+      box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+    }
+
+    
+
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO*/
